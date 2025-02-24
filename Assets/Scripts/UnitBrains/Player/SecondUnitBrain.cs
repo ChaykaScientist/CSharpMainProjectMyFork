@@ -24,15 +24,12 @@ namespace UnitBrains.Player
             {
                 return;
             }
-            else
-            {
-                IncreaseTemperature();
-            }
             for (float Multishoot = 0f; Multishoot <= GunTemperature; Multishoot++)
             {
                 var projectile = CreateProjectile(forTarget);
                 AddProjectileToList(projectile, intoList);
             }
+            IncreaseTemperature();
             ///////////////////////////////////////
         }
 
